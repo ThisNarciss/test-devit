@@ -33,3 +33,5 @@ console.log(
   )
 ); // output false
 console.log(deepEqual({ name: 'test' }, { name: 'test', age: 10 })); // false
+
+// написати через JSON.stringify

@@ -8,7 +8,8 @@ export function* chunkArray(
   const chunkedArr = [...arr];
   // Запускаємо цикл for
   for (let index = 0; index < arrLength; index += 1) {
-    //   Нарізаємо масив
+    //   Нарізаємо масив і повертаємо його частини
+
     yield chunkedArr.splice(0, arrLength);
   }
 }
@@ -18,8 +19,3 @@ console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
 console.log(iterator.next());
-
-// iterator.next(); // { value: [1,2,3], done: false }
-// iterator.next(); // { value: [4,5,6], done: false }
-// iterator.next(); // { value: [7,8], done: false }
-// iterator.next(); // { value: undefined, done: true }
