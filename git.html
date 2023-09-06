@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./src/style.scss" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container git-container">
+      <a href="./index.html" class="back-link">Back to home</a>
+      <h1>=== GIT ===</h1>
+      <div>
+        <h2>Варіант 1</h2>
+        <p>
+          Виконую команду
+          <span class="git-accent-text"
+            >git clone git@example.com:example/test.git</span
+          >
+          в терміналі, клоную репо до свого локального сховища
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Копіюю всі файли свого робочого коду та переношу в клонований репо
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Виконую команду <span class="git-accent-text">git add .</span> в
+          терміналі, додаю всі файли в індекс
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Роблю комміт командою
+          <span class="git-accent-text">git commit -m "some commit text"</span>
+          в терміналі, додаю всі файли в індекс
+        </p>
+        <p>&#8595;</p>
+        <p>
+          І остання команда <span class="git-accent-text">git push</span> в
+          терміналі, надсилаю зміни до віддаленого репо
+        </p>
+      </div>
+      <div>
+        <h2>Варіант 2</h2>
+        <p>
+          Переходжу до каталогу де знаходиться мій робочий код командою
+          <span class="git-accent-text">cd "dirname"</span> в терміналі
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Ініціалізую локальний репо командою
+          <span class="git-accent-text">git init</span> в терміналі
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Виконую команду <span class="git-accent-text">git add .</span> в
+          терміналі, додаю всі файли в індекс
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Роблю комміт командою
+          <span class="git-accent-text">git commit -m "some commit text"</span>
+          в терміналі, додаю всі файли в індекс
+        </p>
+        <p>&#8595;</p>
+        <p>
+          Зв'язую локальний репо з віддаленим командою
+          <span class="git-accent-text"
+            >git remote add origin git@example.com:example/test.git</span
+          >
+          в терміналі
+        </p>
+        <p>&#8595;</p>
+        <p>
+          І остання команда
+          <span class="git-accent-text"
+            >git push --set-upstream origin master</span
+          >
+          в терміналі, надсилаю зміни до віддаленого репо в гілку master
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

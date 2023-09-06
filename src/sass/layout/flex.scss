@@ -1,0 +1,51 @@
+.flex-box {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  h2 {
+    color: var(--second-text-color);
+    font-size: 30px;
+  }
+  & > header,
+  nav,
+  main,
+  aside,
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--second-bg-color);
+  }
+}
+
+.flex-header {
+  flex: 100%;
+  order: 1;
+  height: 100px;
+}
+.flex-nav {
+  flex: 100%;
+  order: 2;
+  height: 40px;
+}
+
+.flex-main {
+  flex: 2;
+  order: 3;
+  height: 500px;
+}
+
+.flex-aside {
+  flex: 1;
+  order: 4;
+  height: 500px;
+}
+
+.flex-footer {
+  flex: 100%;
+  order: 4;
+  height: 50px;
+}
