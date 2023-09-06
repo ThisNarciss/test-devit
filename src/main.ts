@@ -1,1 +1,1 @@
-
+import './ts/deepEqual';
