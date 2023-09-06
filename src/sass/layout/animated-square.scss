@@ -1,0 +1,76 @@
+@keyframes squareRotate {
+  0% {
+    transform: perspective(800px) rotateY(0deg) rotateX(0deg);
+  }
+
+  100% {
+    transform: perspective(800px) rotateY(360deg) rotateX(360deg);
+  }
+}
+
+@keyframes squareChangeColor {
+  0% {
+    background-color: red;
+  }
+  50% {
+    background-color: orange;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+.square-container {
+  padding: 80px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.square {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  transform-style: preserve-3d;
+  animation: squareRotate 5000ms linear infinite;
+}
+
+.side {
+  position: absolute;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 200px;
+  height: 200px;
+  border: 10px;
+  transform-style: preserve-3d;
+  background-color: var(--link-bg-color);
+  border: 2px solid var(--second-bg-color);
+
+  animation: squareChangeColor 5000ms linear infinite alternate;
+
+  p {
+    font-size: 60px;
+  }
+}
+
+.front {
+  transform: translateZ(100px);
+}
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
