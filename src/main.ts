@@ -4,3 +4,4 @@ import './ts/bulkRun';
 import './ts/arrayToObject';
 import './ts/objectToArray';
 import './ts/reliableMultiply';
+import './ts/mapObject';
