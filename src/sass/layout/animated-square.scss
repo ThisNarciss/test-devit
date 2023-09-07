@@ -10,13 +10,13 @@
 
 @keyframes squareChangeColor {
   0% {
-    background-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
   }
   50% {
-    background-color: orange;
+    background-color: rgba(255, 166, 0, 0.5);
   }
   100% {
-    background-color: green;
+    background-color: rgba(0, 128, 0, 0.5);
   }
 }
 
