@@ -1,0 +1,49 @@
+@keyframes iconRotate {
+  0% {
+    transform: rotateZ(-20deg);
+  }
+
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
+
+.title-icon {
+  transform-origin: bottom center;
+  animation: iconRotate 1000ms linear infinite alternate;
+}
+
+.home-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.img-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+.home-img {
+  border-radius: 10px;
+  overflow: hidden;
+}
+.text-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.home-text {
+  max-width: 200px;
+}
+.home-text-icon {
+  font-size: 30px;
+}
+.home-title {
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+}

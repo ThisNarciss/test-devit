@@ -7,6 +7,12 @@
   a {
     padding: 10px 20px;
     background-color: var(--link-bg-color);
+    color: var(--default-text-color);
     border-radius: 10px;
+    transition: background-color 250ms linear, color 250ms linear;
+    &:hover {
+      color: var(--link-bg-color);
+      background-color: var(--second-bg-color);
+    }
   }
 }
