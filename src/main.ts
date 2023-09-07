@@ -5,3 +5,5 @@ import './ts/arrayToObject';
 import './ts/objectToArray';
 import './ts/reliableMultiply';
 import './ts/mapObject';
+import './ts/combos';
+import './ts/add';
