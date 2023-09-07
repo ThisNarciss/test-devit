@@ -1,3 +1,4 @@
+// Варіант 1 - перевіряти властивості рекурсивно
 export const deepEqual: (firstObj: any, secondObj: any) => boolean = (
   firstObj,
   secondObj
@@ -24,6 +25,12 @@ export const deepEqual: (firstObj: any, secondObj: any) => boolean = (
   return true;
 };
 
+// Варіант 2 (Для прикладів із тестового він підходить найкраще, але якщо в об'єкті будуть методи або тип даних Symbol тоді ми можемо використовувати тільки функцію з рекурсією бо JSON.stringify не зможе конвертувати методи та Symbol до строки) - використаємо JSON.stringify
+
+// export const deepEqual = (firstObj: any, secondObj: any) => {
+//   return JSON.stringify(firstObj) === JSON.stringify(secondObj);
+// };
+
 console.log(deepEqual({ name: 'test' }, { name: 'test' })); // output true
 console.log(deepEqual({ name: 'test' }, { name: 'test1' })); // output false
 console.log(
@@ -33,5 +40,3 @@ console.log(
   )
 ); // output false
 console.log(deepEqual({ name: 'test' }, { name: 'test', age: 10 })); // false
-
-// написати через JSON.stringify
